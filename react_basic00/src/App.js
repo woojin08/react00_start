@@ -1,38 +1,12 @@
-import { useRef, useState } from "react";
+import TopBanner from './pages/TopBanner';
 import './basic.css';
 
-
 const App = () => {
-
-  const [num, setNum] = useState(1);
-  const [toggle, setToggle] = useState(true);
-
-  const Test = () => {
-    return (
-      <div>
-        hellow
-      </div>
-    )
-  }
-
   return (
     <>
-      {num}
-      <section className={toggle ? '' : 'on'}>
-        {toggle ? 'loading...' : <Test />}
-      </section>
-      <div>000</div>
-      <button onClick={
-        () => (
-          setNum(num + 1),
-          console.log(toggle),
-          setToggle(!toggle),
-          console.log(num)
-        )
-      }>click</button>
+      <TopBanner />
     </>
   )
 }
-
 
 export default App;
