@@ -1,5 +1,5 @@
-import TopBanner from './pages/TopBanner';
-import ListTest from './pages/ListTest';
+import TopBanner from '../pages/TopBanner';
+import ListTest from '../pages/ListTest';
 import './basic.css';
 import { useEffect, useState } from 'react';
 
